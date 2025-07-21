@@ -1,9 +1,11 @@
 
-from langchain.chat_models import ChatOpenAI
+from langchain_community.chat_models import ChatOpenAI
 from langchain.chains import LLMChain
 from app.prompts import get_prompt_template
 from dotenv import load_dotenv
 import os
+
+
 
 load_dotenv()
 
@@ -52,10 +54,3 @@ def generate_text(tema: str, audiencia: str, plataforma: str) -> str:
 
 #     return output
 
-if __name__ == "__main__":
-    texto = generate_text(
-        tema="Cómo usar la IA para impulsar tu marca personal",
-        audiencia="emprendedores digitales",
-        plataforma="LinkedIn"
-    )
-    print(texto)
