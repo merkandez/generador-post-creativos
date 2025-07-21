@@ -1,0 +1,30 @@
+# Entorno virtual
+venv/
+
+# Archivos de configuración sensibles
+.env
+
+# Archivos de caché y temporales
+__pycache__/
+*.py[cod]
+*.log
+*.tmp
+
+# Configuración de Streamlit
+.streamlit/config.toml
+
+# Archivos de usuario (Mac, VSCode, etc.)
+.DS_Store
+.vscode/
+
+# Salidas de compilación
+*.egg-info/
+dist/
+build/
+
+# Archivos generados por notebooks
+.ipynb_checkpoints/
+
+# Otros posibles directorios basura
+*.sqlite3
+*.db
