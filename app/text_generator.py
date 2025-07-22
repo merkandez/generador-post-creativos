@@ -5,8 +5,6 @@ from app.prompts import get_prompt_template
 from dotenv import load_dotenv
 import os
 
-
-
 load_dotenv()
 
 def generate_text(tema: str, audiencia: str, plataforma: str) -> str:
